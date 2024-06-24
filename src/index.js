@@ -20,8 +20,8 @@ function generatePoem(event) {
   let apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
 
   console.log("Generating poem");
-  console.log("Prompt: ${prompt}");
-  console.log("Context: ${context}");
+  console.log(`Context: ${context}`);
+  console.log(`Prompt: ${prompt}`);
 
   axios.get(apiUrl).then(displayPoem);
 }
